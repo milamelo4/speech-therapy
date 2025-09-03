@@ -2,7 +2,7 @@ export default function Footer() {
     return (
          <footer className="bg-foreground text-primary-foreground py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-8">
-            <img src="assets/Cindy-logo.webp" alt="" width={100} />
+            <img src="assets/Cindy-logo.webp" alt="Cindy Melo Rodgerson logo" width={100} />
           </div>
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
