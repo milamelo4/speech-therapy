@@ -92,7 +92,7 @@ export default function HeroSection() {
                 <MotionLink
                   href="tel:801-577-8521"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
-                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-muted-foreground border-dashed
+                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
                             hover:shadow-lg hover:bg-card hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -105,7 +105,7 @@ export default function HeroSection() {
                 <MotionLink
                   href="mailto:cindgee@me.com"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
-                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-muted-foreground border-dashed
+                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
                             hover:shadow-lg hover:bg-card hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >
@@ -120,7 +120,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
-                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-muted-foreground border-dashed
+                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
                             hover:shadow-lg hover:bg-card hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >

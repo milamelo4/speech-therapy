@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Rates() {
     return (
-        <section id="rates" className="py-16 px-4 sm:px-6 lg:px-8 bg-card">
+        <section id="rates" className="py-16 px-4 sm:px-6 lg:px-8 bg-card min-h-screen sm:min-h-[80vh]">
             <div className="max-w-4xl mx-auto">
                 <motion.div
                     className="text-center mb-16"
