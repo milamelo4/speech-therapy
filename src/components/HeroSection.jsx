@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react'
 
 export default function HeroSection() {
     const [offset, setOffset] = useState(0);
+    const MotionLink = motion("a");
 
   useEffect(() => {
     const handleScroll = () => setOffset(window.scrollY * 0.4);
@@ -88,7 +89,7 @@ export default function HeroSection() {
                 transition={{ duration: 1, delay: 0.4 }}
               >
                 {/* Phone */}
-                <motion.a
+                <MotionLink
                   href="tel:801-577-8521"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
                             bg-white/70 backdrop-blur-md shadow-md p-2 border border-muted-foreground border-dashed
@@ -98,10 +99,10 @@ export default function HeroSection() {
                   <Phone className="w-8 h-8 text-primary mb-2" />
                   <h3 className="font-semibold text-base">Phone</h3>
                   <p className="text-sm text-muted-foreground">801-577-8521</p>
-                </motion.a>
+                </MotionLink>
                 
                 {/* Email */}
-                <motion.a
+                <MotionLink
                   href="mailto:cindgee@me.com"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
                             bg-white/70 backdrop-blur-md shadow-md p-2 border border-muted-foreground border-dashed
@@ -111,10 +112,10 @@ export default function HeroSection() {
                   <Mail className="w-8 h-8 text-primary mb-2" />
                   <h3 className="font-semibold text-base">Email</h3>
                   <p className="text-sm text-muted-foreground">cindgee@me.com</p>
-                </motion.a>
+                </MotionLink>
 
                 {/* Location */}
-                <motion.a
+                <MotionLink
                 href="https://www.google.com/maps/place/Salt+Lake+City,+UT/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,7 +127,7 @@ export default function HeroSection() {
                   <MapPin className="w-8 h-8 text-primary mb-2" />
                   <h3 className="font-semibold text-base">Location</h3>
                   <p className="text-sm text-muted-foreground">Salt Lake City, UT</p>
-                </motion.a>
+                </MotionLink>
             </motion.div>
          </motion.div>
         </div>
