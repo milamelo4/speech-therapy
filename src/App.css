@@ -5,6 +5,10 @@
 /* 
 #E4CB49
 */
+* {
+  outline: 1px solid red;
+  /* debug */
+}
 
 @theme inline {
   --dark-lavender: var(--primary);

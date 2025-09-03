@@ -49,7 +49,7 @@ export default function Contact() {
                 </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-8 w-full max-w-full overflow-x-hidden">
                 <motion.div
                 className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6"
                 initial={{ opacity: 0, x: -30 }}
