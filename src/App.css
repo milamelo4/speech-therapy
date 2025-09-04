@@ -67,7 +67,7 @@
   /* warm beige */
   --card-foreground: #0F172A;
 
-  --muted: #F5F5F5;
+  --muted: #e3dede;
   /* light gray fallback */
   --muted-foreground: #374151;
 
@@ -102,7 +102,7 @@
 .gradient-border {
   border: 1px solid transparent;
   border-radius: 9999px;
-  background-image: linear-gradient(to right, #D85459, #5FC0D0, #324996);
+  background-image: linear-gradient(90deg, #D85459, #5FC0D0, #324996);
   background-origin: border-box;
   background-clip: border-box;
 }

@@ -6,7 +6,6 @@ import {
   MapPin,
   Award,
   Book,
-  
 } from 'lucide-react'
 import { motion} from 'framer-motion'
 import { useEffect, useState } from 'react'
