@@ -50,7 +50,7 @@
   /* base */
   --radius: 0.625rem;
   --background: #FFFFFF;
-  --foreground: #0F172A;
+  --foreground: #131212;
 
   /* main brand */
   --primary: #D85459;
@@ -60,7 +60,7 @@
 
   --secondary: #5FC0D0;
   /* teal */
-  --secondary-foreground: #0F172A;
+  --secondary-foreground: #2b2c2d;
 
   /* neutrals */
   --card: #E7BCB2;
