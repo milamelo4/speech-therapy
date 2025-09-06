@@ -65,7 +65,8 @@ export default function HeroSection() {
             <Button
               size="lg"
               className="w-48 bg-primary hover:bg-primary-foreground text-white px-8 py-3 rounded-full hover:bg-primary-darker focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} >
+              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}  
+              aria-label="Call to schedule a free consultation">
               <Phone className="mr-0.2 w-4 h-4" />
               Free Consultation
             </Button>
@@ -73,7 +74,8 @@ export default function HeroSection() {
             <Button                
               size="lg"
               className="w-48 bg-primary hover:bg-primary-foreground text-white px-8 py-3 rounded-full hover:bg-primary-darker focus:ring-2 focus:ring-primary-darker transition duration-300 ease-in-out"
-              onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} >
+              onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} 
+              aria-label="Learn more about Cindy Melo Rodgerson">
               <Book className="mr-0.2 w-4 h-4" />
               Learn More
             </Button>

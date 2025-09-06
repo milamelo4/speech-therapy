@@ -124,6 +124,7 @@ export default function Contact() {
                         <Button
                         type="submit"
                         className="w-full bg-accent hover:bg-accent-foreground text-accent-foreground hover:text-primary-foreground"
+                        aria-label="Send message"
                         >
                         Send Message
                         </Button>
