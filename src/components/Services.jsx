@@ -1,35 +1,34 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import {
-  Phone,
-  Users,
-  MessageCircle,
-  Home
-} from 'lucide-react'
+import { Separator } from '@/components/ui/separator.jsx'
 import { motion } from 'framer-motion'
 
 export default function Services() {
     const services = [
         {
-        icon: <MessageCircle className="w-8 h-8" />,
+        image: "assets/speech.webp",
+        alt: "Photo by Matteo Discardi on Unsplash",
         title: "Speech Evaluation",
         description: "Comprehensive assessment to understand your child's current abilities and communication needs.",
         price: "$150/hr"
         },
         {
-        icon: <Users className="w-8 h-8" />,
+        image: "assets/individual-therapy.webp",
+        alt: "Photo by Jerry Wang on Unsplash",
         title: "Individual Therapy",
         description: "Personalized one-on-one sessions tailored to your child's specific goals and needs.",
         price: "30min: $50 | 45min: $75 | 60min: $100"
         },
         {
-        icon: <Home className="w-8 h-8" />,
+        image: "assets/home-support.webp",
+        alt: "Photo by sofatutor on Unsplash1",
         title: "Home Support",
         description: "Parent participation and home practice guidance to reinforce skills in everyday environments.",
         price: "Included in sessions"
         },
         {
-        icon: <Phone className="w-8 h-8" />,
+        image: "assets/consultation.webp",
+        alt: "Photo by sofatutor on Unsplash",
         title: "Free Consultation",
         description: "Initial phone consultation to discuss concerns and determine appropriate next steps.",
         price: "Free"
@@ -37,7 +36,7 @@ export default function Services() {
     ]
 
     return (
-        <section id="services" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted">
+        <section id="services" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/10 via-muted to-muted">
             <div className="max-w-7xl mx-auto">
                 <motion.div
                     className="text-center mb-16"
@@ -54,23 +53,23 @@ export default function Services() {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: index * 0.1 }}
+                        transition={{ duration: 0.2, delay: index * 0.1 }}
                         viewport={{ once: true }}
                         whileHover={{ y: -5 }}
                     >
-                        <Card className="h-full bg-card text-card-foreground hover:shadow-lg transition-shadow duration-300">
-                        <CardHeader>
-                            <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-primary mb-4">
-                            {service.icon}
+                        <Card className="h-full flex flex-col overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all bg-background pt-0 ">
+                            <div className="h-40 w-full overflow-hidden">
+                                <img src={service.image} alt={service.alt} className="w-full h-full object-cover" />
                             </div>
+                        <CardHeader>
                             <CardTitle className="text-xl">{service.title}</CardTitle>
-                            <Badge variant="secondary" className="w-fit bg-accent text-accent-foreground">{service.price}</Badge>
+                            <Badge variant="secondary" className="w-fit bg-secondary/20 text-accent-foreground">{service.price}</Badge>
                         </CardHeader>
                         <CardContent>
                             <CardDescription className="text-muted-foreground">
@@ -82,46 +81,45 @@ export default function Services() {
                 ))}
                 </div>
 
+                {/* My Approach */}
                 <motion.div
-                    className="mt-12 bg-secondary rounded-2xl p-8 text-secondary-foreground"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
+                className="mt-12 bg-secondary/10 rounded-2xl p-8 text-secondary-foreground"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
                 >
-                    <h3 className="text-2xl font-semibold mb-4 text-center">My Approach</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
+                <h3 className="text-2xl font-semibold mb-8 text-center">My Approach</h3>
+                
+                <div className="grid md:grid-cols-3 gap-8 text-center">
                     <div>
-                        <h4 className="font-semibold mb-2">Initial Consultation</h4>
-                        <p className="text-sm">
-                        I offer a free initial phone consultation to discuss your concerns, answer questions,
-                        and determine appropriate next steps.
+                        <h4 className="text-xl font-bold text-primary mb-2">Initial Consultation</h4>
+                        <p className="text-sm text-muted-foreground">
+                            Free phone consultation to discuss concerns, answer questions, 
+                            and plan next steps.
                         </p>
                     </div>
                     <div>
-                        <h4 className="font-semibold mb-2">Comprehensive Assessment</h4>
-                        <p className="text-sm">
-                        If an evaluation is recommended, we'll begin with a comprehensive assessment to
-                        better understand your child's current abilities and needs.
-                        </p>
+                    <h4 className="text-xl font-bold text-primary mb-2">Comprehensive Assessment</h4>
+                    <p className="text-sm text-muted-foreground">
+                        In-depth evaluation to understand abilities and communication 
+                        needs.
+                    </p>
                     </div>
+
                     <div>
-                        <h4 className="font-semibold mb-2">Individualized Treatment</h4>
-                        <p className="text-sm">
-                        This information will help guide the development of an individualized treatment plan
-                        tailored to your child's specific goals.
-                        </p>
+                    <h4 className="text-xl font-bold text-primary mb-2">Individualized Treatment</h4>
+                    <p className="text-sm text-muted-foreground">
+                        Customized therapy sessions tailored to each child's unique goals.
+                    </p>
                     </div>
-                    <div>
-                        <h4 className="font-semibold mb-2">Family Involvement</h4>
-                        <p className="text-sm">
-                        Home practice is expected, and parents are welcome to participate in sessions.
-                        Your support at home is vital to the therapy process.
-                        </p>
-                    </div>
-                    </div>
+                </div>
+
+
                 </motion.div>
+
             </div>
+            
         </section>
 
     );

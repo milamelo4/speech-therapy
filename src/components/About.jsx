@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import {
-  Heart,
   CheckCircle,
   Award,
 } from 'lucide-react'
@@ -24,18 +23,17 @@ export default function About() {
             </motion.div>
         
             <div className="relative flex flex-col lg:flex-row items-center">
-                <div className="absolute inset-0 rounded-2xl bg-black/5 shadow-lg"></div>
-                {/* <div className="hidden lg:block absolute top-[-18px] right-45 z-10 w-160 h-105 bg-primary shadow-2xl rounded-2xl"></div> */}
+                <div className="absolute inset-0 rounded-2xl bg-black/5 shadow-lg"></div>                
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="self-center -mb-10 lg:self-start lg:mb-10 rounded-2xl relative z-20"
+                    className="self-center -mb-6 lg:self-start lg:mb-10 rounded-2xl relative z-20"
                     >
                         <img
                             src="assets/profile.webp"
-                            alt="About Cindy"
+                            alt="About Cindy Melo Rodgerson"
                             className="w-60 h-60 object-cover rounded-full shadow-2xl border-4 border-white"
                         />                   
                 </motion.div>
@@ -47,8 +45,8 @@ export default function About() {
                     viewport={{ once: true }}
                     className="relative z-10"
                 >
-                <div className='bg-primary shadow-2xl rounded-2xl p-6 lg:p-8 self-center ml-auto lg:-ml-12'>
-                    <div className="bg-primary-foreground/10 rounded-2xl p-8 lg:p-10 text-primary-foreground max-w-xl min-h-[300px] lg:min-h-[400px] shadow-2xl">
+                <div className='bg-primary shadow-2xl rounded-2xl p-0 lg:p-8 self-center ml-auto lg:-ml-14'>
+                    <div className="bg-primary-foreground/10 rounded-2xl p-8 lg:p-10 text-primary-foreground max-w-xl min-h-[300px] lg:min-h-[400px] lg:shadow-2xl">
                         {/* <Heart className="w-12 h-12 text-primary mb-4" /> */}
                         <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
                         <p className="mb-4">
@@ -63,7 +61,7 @@ export default function About() {
                 </motion.div>
 
                 {/* Credentials */}                
-                <div className="mt-4 lg:mt-0 l-8 w-full max-w-md px-4">                    
+                <div className="mt-4 lg:mt-0 l-8 w-full max-w-md px-0 lg:px-6">                    
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -71,10 +69,10 @@ export default function About() {
                         viewport={{ once: true }}
                         className="rounded-2xl"
                     >
-                        <Card className="bg-background border-t-1 border-primary border-dashed text-card-foreground rounded-2xl shadow-md">
+                        <Card className="bg-background border-t-1 border-primary border-dashed text-card-foreground rounded-2xl lg:shadow-md">
                             <CardHeader>
                                 <CardTitle className="flex items-center text-lg font-semibold text-primary">
-                                <Award className="w-6 h-6 mr-2 text-primary" />
+                                <Award className="w-7 h-7 mr-1 text-primary" />
                                 Credentials
                                 </CardTitle>
                             </CardHeader>
