@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             <Button                
               size="lg"
-              className="w-48 bg-secondary hover:bg-secondary-foreground text-foreground px-8 py-3 rounded-full hover:bg-secondary/60 hover:text-foreground focus:ring-2 focus:ring-primary-darker transition duration-300 ease-in-out"
+              className="w-48 bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 hover:border-primary hover:text-foreground focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
               onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} 
               aria-label="Learn more about Cindy Melo Rodgerson">
               <Book className="mr-0.2 w-4 h-4" />

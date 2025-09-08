@@ -23,7 +23,7 @@ export default function About() {
             </motion.div>
         
             <div className="relative flex flex-col lg:flex-row items-center">
-                <div className="absolute inset-0 rounded-2xl bg-black/5 shadow-lg -mb-6"></div>                
+                <div className="absolute inset-0 rounded-2xl bg-black/5 shadow-lg "></div>                
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -61,7 +61,7 @@ export default function About() {
                 </motion.div>
 
                 {/* Credentials */}                
-                <div className="mt-4 lg:mt-0 l-8 w-full max-w-md px-0 lg:px-6">                    
+                <div className="mt-8 lg:mt-0 l-8 w-full max-w-md px-0 lg:px-6">                    
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,6 @@ export default function About() {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent className="divide-y divide-border/50">
-
                                 <div className="flex items-start space-x-3 py-3">
                                     <div className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary/10 text-secondary">
                                         <CheckCircle className="w-5 h-5" />
