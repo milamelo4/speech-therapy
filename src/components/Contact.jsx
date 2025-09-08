@@ -49,29 +49,29 @@ export default function Contact() {
                 </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-2 gap-8 w-full max-w-full overflow-x-hidden">
+            <div className="grid lg:grid-cols-2 gap-8 w-full max-w-full overflow-x-hidden p-4 rounded-2xl shadow-md">
                 <motion.div
-                className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6"
+                className="bg-background text-foreground backdrop-blur-sm rounded-2xl p-6"
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
                 >
-                    <h3 className="text-2xl font-semibold text-primary-foreground mb-6">Contact Information</h3>
+                    <h3 className="text-2xl font-semibold text-foreground mb-6">Contact Information</h3>
                     <div className="space-y-4">
-                        <div className="flex items-center space-x-3 text-primary-foreground">
+                        <div className="flex items-center space-x-3 text-foreground">
                         <Phone className="w-5 h-5" />
                         <span>801-577-8521</span>
                         </div>
-                        <div className="flex items-center space-x-3 text-primary-foreground">
+                        <div className="flex items-center space-x-3 text-foreground">
                         <Mail className="w-5 h-5" />
                         <span>cindgee@me.com</span>
                         </div>
-                        <div className="flex items-center space-x-3 text-primary-foreground">
+                        <div className="flex items-center space-x-3 text-foreground">
                         <MapPin className="w-5 h-5" />
                         <span>Salt Lake City, UT and surrounding areas</span>
                         </div>
-                        <div className="flex items-center space-x-3 text-primary-foreground">
+                        <div className="flex items-center space-x-3 text-foreground">
                         <Award className="w-5 h-5" />
                         <span>License # 9142271-4102</span>
                         </div>
@@ -79,7 +79,7 @@ export default function Contact() {
                 </motion.div>
 
                 <motion.div
-                className="bg-card rounded-2xl p-6 text-card-foreground"
+                className="bg-white rounded-2xl p-6 text-foreground"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
@@ -123,7 +123,7 @@ export default function Contact() {
                         />
                         <Button
                         type="submit"
-                        className="w-full bg-accent hover:bg-accent-foreground text-accent-foreground hover:text-primary-foreground"
+                        className="w-full bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
                         aria-label="Send message"
                         >
                         Send Message

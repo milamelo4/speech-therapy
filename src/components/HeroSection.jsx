@@ -64,7 +64,7 @@ export default function HeroSection() {
             >
             <Button
               size="lg"
-              className="w-48 bg-primary hover:bg-primary-foreground text-white px-8 py-3 rounded-full hover:bg-primary-darker focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
+              className="w-48 bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}  
               aria-label="Call to schedule a free consultation">
               <Phone className="mr-0.2 w-4 h-4" />
@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             <Button                
               size="lg"
-              className="w-48 bg-primary hover:bg-primary-foreground text-white px-8 py-3 rounded-full hover:bg-primary-darker focus:ring-2 focus:ring-primary-darker transition duration-300 ease-in-out"
+              className="w-48 bg-secondary hover:bg-secondary-foreground text-foreground px-8 py-3 rounded-full hover:bg-secondary/60 hover:text-foreground focus:ring-2 focus:ring-primary-darker transition duration-300 ease-in-out"
               onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} 
               aria-label="Learn more about Cindy Melo Rodgerson">
               <Book className="mr-0.2 w-4 h-4" />
@@ -93,8 +93,8 @@ export default function HeroSection() {
                 <MotionLink
                   href="tel:801-577-8521"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
-                            bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
-                            hover:shadow-lg hover:bg-card hover:text-foreground transition"
+                  bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
+                  hover:shadow-lg hover:bg-secondary/20 hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Phone className="w-8 h-8 text-primary mb-2" />
@@ -107,7 +107,7 @@ export default function HeroSection() {
                   href="mailto:cindgee@me.com"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
                             bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
-                            hover:shadow-lg hover:bg-card hover:text-foreground transition"
+                            hover:shadow-lg hover:bg-secondary/20 hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Mail className="w-8 h-8 text-primary mb-2" />
@@ -122,7 +122,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                   className="w-40 h-40 flex flex-col items-center justify-center rounded-full
                             bg-white/70 backdrop-blur-md shadow-md p-2 border border-primary border-dashed
-                            hover:shadow-lg hover:bg-card hover:text-foreground transition"
+                            hover:shadow-lg hover:bg-secondary/20 hover:text-foreground transition"
                   whileHover={{ scale: 1.05 }}
                 >
                   <MapPin className="w-8 h-8 text-primary mb-2" />

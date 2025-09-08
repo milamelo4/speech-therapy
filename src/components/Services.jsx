@@ -68,10 +68,11 @@ export default function Services() {
                             </div>
                         <CardHeader>
                             <CardTitle className="text-xl">{service.title}</CardTitle>
-                            <Badge variant="secondary" className="w-fit bg-secondary/20 text-accent-foreground">{service.price}</Badge>
+                            <Badge variant="secondary" className="w-fit bg-secondary/20 text-accent-foreground">{service.price}
+                            </Badge>
                         </CardHeader>
                         <CardContent>
-                            <CardDescription className="text-muted-foreground">
+                            <CardDescription className="text-foreground">
                             {service.description}
                             </CardDescription>
                         </CardContent>
@@ -82,7 +83,7 @@ export default function Services() {
 
                 {/* My Approach */}
                 <motion.div
-                className="mt-12 bg-secondary/10 rounded-2xl p-8 text-secondary-foreground"
+                className="mt-10 md:mt-20 bg-secondary/10 rounded-2xl p-8 text-secondary-foreground"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
@@ -93,7 +94,7 @@ export default function Services() {
                 <div className="grid md:grid-cols-3 gap-8 text-center">
                     <div>
                         <h4 className="text-xl font-bold text-primary mb-2">Initial Consultation</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-foreground">
                             Free phone consultation to discuss concerns, answer questions, 
                             and plan next steps.
                         </p>
