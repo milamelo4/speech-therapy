@@ -35,7 +35,7 @@ export default function Contact() {
     <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-primary">
         <div className="max-w-4xl mx-auto">
             <motion.div
-                className="text-center mb-12"
+                className="text-center mb-10"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
@@ -44,7 +44,7 @@ export default function Contact() {
                 <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
                 Ready to Get Started?
                 </h2>
-                <p className="text-secondary-foreground">
+                <p className="text-black">
                 Contact me today for a free consultation to discuss your child's needs.
                 </p>
             </motion.div>
@@ -123,7 +123,7 @@ export default function Contact() {
                         />
                         <Button
                         type="submit"
-                        className="w-full bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
+                        className="w-full bg-primary hover:bg-primary-foreground text-black px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
                         aria-label="Send message"
                         >
                         Send Message

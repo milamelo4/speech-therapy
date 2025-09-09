@@ -71,7 +71,7 @@ export default function Navigation() {
               />
             </g>
           </svg>
-          Cindy Melo Rodgerson, M.S. CCC-SLP
+          <a href="#" title='Home'>Cindy Melo Rodgerson, M.S. CCC-SLP</a>
         </div>
       </motion.div>
 

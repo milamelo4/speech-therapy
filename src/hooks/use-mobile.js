@@ -20,7 +20,7 @@ export function useIsMobile() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   
-  console.log("isMobile:", isMobile);
+ 
   return isMobile;
 }
 

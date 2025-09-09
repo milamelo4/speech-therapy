@@ -16,9 +16,9 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-border border-primary pt-8">
-            <p className="text-primary text-sm">
+            <p className="text-background text-sm">
               &copy; 2025 Cindy Melo Rodgerson. All rights reserved. | License # 9142271-4102
-            </p>
+            </p><small>Designed & Developed by MilaMelo</small>
           </div>
         </div>
       </footer>

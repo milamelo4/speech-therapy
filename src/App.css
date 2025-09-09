@@ -50,24 +50,36 @@
   /* base */
   --radius: 0.625rem;
   --background: #FFFFFF;
-  --foreground: #131212;
+  --foreground: #181819;
+  --black: #181819;
 
   /* main brand */
-  --primary: #D85459;
-  --primary-darker: #a2383b;
+ 
   /* coral red */
+  --primary2: #D85459;
   --primary-foreground: #FFFFFF;
+  --secondary2: #5FC0D0;
 
-  --secondary: #5FC0D0;
-  /* teal */
-  --secondary-foreground: #181819;
+  /* blue palette */
+  --primary: #3B82F6;
+  --secondary: #14B8A6;
+  --muted: #F1F5F9;
+  --foreground: #1E293B;
+
+ 
+  /* Peach palette */
+
+  --primary3: #FCA5A5;
+  --secondary3: #FACC15;
+  --muted3: #FEF9C3;
+  --foreground3: #78350F;
 
   /* neutrals */
   --card: #E7BCB2;
   /* warm beige */
-  --card-foreground: #0F172A;
+  --card-foreground: #181819;
 
-  --muted: #e3dede;
+  --muted2: #e3dede;
   /* light gray fallback */
   --muted-foreground: #374151;
 

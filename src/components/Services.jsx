@@ -38,7 +38,7 @@ export default function Services() {
         <section id="services" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary/10 via-muted to-muted">
             <div className="max-w-7xl mx-auto">
                 <motion.div
-                    className="text-center mb-16"
+                    className="text-center mb-10"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}

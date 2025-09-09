@@ -27,7 +27,7 @@ export default function HeroSection() {
       className="relative min-h-screen sm:min-h-[80vh] pt-35 sm:pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden" 
       id="hero">
         <div
-        className="absolute inset-0 bg-[url('/assets/kids.webp')] bg-cover bg-top"
+        className="absolute inset-0 bg-[url('/assets/kids.webp')] bg-cover bg-center sm:bg-left sm:filter brightness-75"
         style={{ transform: `translateY(${offset}px)` }}
         />
         <div className="absolute inset-0 bg-white/80 "></div>
@@ -49,7 +49,7 @@ export default function HeroSection() {
               </span>
               Pathologist
             </h1>
-            <p className="text-xl text-foreground mb-10 max-w-3xl mx-auto sm:bg-transparent bg-card/30 px-8 py-4 rounded-lg sm:shadow-none shadow-sm backdrop-blur-sm backdrop-saturate-100">
+            <p className="text-xl text-foreground mb-10 max-w-3xl mx-auto sm:bg-transparent bg-primary/30 px-8 py-4 rounded-lg sm:shadow-none shadow-sm backdrop-blur-sm backdrop-saturate-100">
               Helping children find their voice and reach their communication potential.
               Serving Salt Lake City and surrounding areas with personalized,
               evidence-based speech therapy services.
@@ -64,7 +64,7 @@ export default function HeroSection() {
             >
             <Button
               size="lg"
-              className="w-48 bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
+              className="w-48 bg-primary hover:bg-primary-foreground text-black px-8 py-3 rounded-full hover:bg-primary/70 focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}  
               aria-label="Call to schedule a free consultation">
               <Phone className="mr-0.2 w-4 h-4" />
@@ -73,7 +73,7 @@ export default function HeroSection() {
 
             <Button                
               size="lg"
-              className="w-48 bg-primary hover:bg-primary-foreground text-foreground px-8 py-3 rounded-full hover:bg-primary/70 hover:border-primary hover:text-foreground focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
+              className="w-48 bg-primary hover:bg-primary-foreground text-black px-8 py-3 rounded-full hover:bg-primary/70 hover:border-primary hover:text-foreground focus:ring-2 focus:ring-[#5FC0D0] transition duration-300 ease-in-out"
               onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })} 
               aria-label="Learn more about Cindy Melo Rodgerson">
               <Book className="mr-0.2 w-4 h-4" />

@@ -11,19 +11,19 @@ export default function About() {
         <div className="absolute -top-6 -left-6 w-80 h-80 bg-primary/10 rounded-full blur-2xl"></div>
         <div className="max-w-7xl mx-auto">
             <motion.div
-            className="text-center mb-4"
+            className="text-center mb-10"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
         >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 About Me
             </h2>
             </motion.div>
-        
+            
             <div className="relative flex flex-col lg:flex-row items-center">
-                <div className="absolute inset-0 rounded-2xl bg-black/5 shadow-lg "></div>                
+                            
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export default function About() {
                     className="relative z-10"
                 >
                     <div className='shadow-2xl rounded-2xl self-center ml-auto lg:-ml-7'>
-                    <div className="bg-primary rounded-2xl p-8 lg:p-10 text-foreground max-w-xl min-h-[300px] lg:min-h-[400px] lg:shadow-2xl">
+                    <div className="bg-secondary/10 rounded-2xl p-8 lg:p-10 text-foreground max-w-xl min-h-[300px] lg:min-h-[400px] lg:shadow-2xl">
                         {/* <Heart className="w-12 h-12 text-primary mb-4" /> */}
                         <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
                         <p className="mb-4">
@@ -67,9 +67,9 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="rounded-2xl"
+                        className="rounded-2xl z-10"
                     >
-                        <Card className="bg-background text-card-foreground rounded-2xl shadow-md">
+                        <Card className="shadow-2xl bg-background text-card-foreground rounded-2xl">
                             <CardHeader>
                                 <CardTitle className="flex items-center text-lg font-semibold text-card-foreground">
                                 <Award className="w-7 h-7 mr-1 text-card-foreground font-semibold" />
