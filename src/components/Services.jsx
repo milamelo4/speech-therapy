@@ -5,28 +5,28 @@ import { motion } from 'framer-motion'
 export default function Services() {
     const services = [
         {
-        image: "assets/speech.webp",
-        alt: "Photo by Matteo Discardi on Unsplash",
+        image: "assets/cindy-speech.png",
+        alt: "Child sitting at a desk wearing headphones",
         title: "Speech Evaluation",
         description: "Comprehensive assessment to understand your child's current abilities and communication needs.",
         price: "$150/hr"
         },
         {
-        image: "assets/individual-therapy.webp",
-        alt: "Photo by Jerry Wang on Unsplash",
+        image: "assets/cindy-individual.png",
+        alt: "Therapist working one-on-one with a child at a desk during an individual therapy session",
         title: "Individual Therapy",
         description: "Personalized one-on-one sessions tailored to your child's specific goals and needs.",
         price: "30min: $50 | 45min: $75 | 60min: $100"
         },
         {
-        image: "assets/home-support.webp",
+        image: "assets/cindy-support.png",
         alt: "Photo by sofatutor on Unsplash1",
         title: "Home Support",
         description: "Parent participation and home practice guidance to reinforce skills in everyday environments.",
         price: "Included in sessions"
         },
         {
-        image: "assets/consultation.webp",
+        image: "assets/cindy-consultation.png",
         alt: "Photo by sofatutor on Unsplash",
         title: "Free Consultation",
         description: "Initial phone consultation to discuss concerns and determine appropriate next steps.",
@@ -63,7 +63,7 @@ export default function Services() {
                         whileHover={{ y: -5 }}
                     >
                         <Card className="h-full flex flex-col overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all bg-background pt-0 ">
-                            <div className="h-40 w-full overflow-hidden">
+                            <div className="h-52 w-full overflow-hidden">
                                 <img src={service.image} alt={service.alt} className="w-full h-full object-cover" />
                             </div>
                         <CardHeader>
